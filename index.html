@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Countdown Timer</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="timer">
+      <div class="timer__controls">
+        <button data-time="30" class="timer__button">30 Secs</button>
+        <button data-time="45" class="timer__button">45 Secs</button>
+        <button data-time="60" class="timer__button">60 Secs</button>
+        <button data-time="90" class="timer__button">90 Secs</button>
+        <button data-time="120" class="timer__button">120 Secs</button>
+        <button data-time="1200" class="timer__button">Snack 20</button>
+        <button data-time="3600" class="timer__button">Lunch Break</button>
+        <form name="customForm" id="custom">
+          <input type="text" name="minutes" placeholder="Enter Minutes" />
+        </form>
+      </div>
+      <div class="display">
+        <h1 class="display__time-left">00:00:00</h1>
+        <p class="display__end-time"></p>
+      </div>
+    </div>
+    <audio src="military-trumpet.mp3" class="timer_sound"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
